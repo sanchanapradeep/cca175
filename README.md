@@ -44,3 +44,16 @@ spark-shell --master yarn \
 hadoop fs -ls /public/retail_db/orders
 ```hadoop tail:```hadoop fs -tail <file name> (/public/retail_db/orders/part-0000)
   
+ # read a file and create an RDD
+ val orders = sc.textFile("/public/retail_db/orders")
+ 
+ #read 1st element
+  order.first
+ #read first 10 element
+  order.take(10)
+   above command creates an RDD from hadoop file .
+   If u want to create an RDD from file on hard disk
+   ```steps:```
+   
+  
+  
