@@ -68,7 +68,6 @@ hadoop fs -ls /public/retail_db/orders
   refer the image 
   
 
-
   
   
   
