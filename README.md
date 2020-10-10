@@ -72,6 +72,7 @@ hadoop fs -ls /public/retail_db/orders
   # take random sample
 orders.takeSample(true,100)
 
+# Actions:
 collect() -> collect all values
 
 count() -> get count
@@ -83,3 +84,9 @@ takeSample(withreplacement, num of recs) -> get random data
 takeOrdered(n, ordering) -> get first n  no of recs in their order or a custom order
 
 saveAsText(path) -> save as a HDFS file
+
+saveAsSequenceFile(path) -> save as HDFS sequence file
+
+saveAsObjectFile(path)  -> write in java serialization, which can be loaded using SparkContext.objectFile()
+
+foreach() -> to execute across the rdd or rdd sample
