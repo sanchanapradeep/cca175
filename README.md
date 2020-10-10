@@ -40,5 +40,5 @@ spark-shell --master yarn \
   sc.getconf.getAll
   
 # create an RDD
-``hadoop comamnd:
+```hadoop comamnd:```
 hadoop fs -ls /public/retail_db/orders
