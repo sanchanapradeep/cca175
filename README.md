@@ -58,3 +58,21 @@ hadoop fs -ls /public/retail_db/orders
   # convert to rdd
   val l_rdd = sc.parallize(l)
   
+  # Spark APIs are catagirised under based on lazy evaluation.
+  1. transformations 
+  2. actions (only performed under action is performed, lazyly executed) performed under DAG (directed acyclic graph)
+ order.debug
+ 
+ dag visuvalization can be seen in UI
+ click on jobs-> click on job u wnat to see the DAG -> click on DAG visuvalization
+  refer the image 
+  
+
+
+  
+  
+  
+  
+  
+  
+  
