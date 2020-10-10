@@ -66,12 +66,4 @@ hadoop fs -ls /public/retail_db/orders
  dag visuvalization can be seen in UI
  click on jobs-> click on job u wnat to see the DAG -> click on DAG visuvalization
   refer the image 
-  
-
-  
-  
-  
-  
-  
-  
-  
+ 
