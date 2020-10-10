@@ -67,5 +67,5 @@ hadoop fs -ls /public/retail_db/orders
  click on jobs-> click on job u wnat to see the DAG -> click on DAG visuvalization
   refer the image 
  
-
+![
   val sc= new sparkcontext(conf)
