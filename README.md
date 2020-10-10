@@ -42,3 +42,5 @@ spark-shell --master yarn \
 # create an RDD
 ```hadoop comamnd:```
 hadoop fs -ls /public/retail_db/orders
+```hadoop tail:```hadoop fs -tail <file name> (/public/retail_db/orders/part-0000)
+  
