@@ -69,3 +69,5 @@ hadoop fs -ls /public/retail_db/orders
  ![img](DAG1.png)
 
   val sc= new sparkcontext(conf)
+  # take random sample
+orders.takeSample(true,100)
