@@ -39,3 +39,6 @@ spark-shell --master yarn \
   val sc= new sparkcontext(conf)
   sc.getconf.getAll
   
+# create an RDD
+``hadoop comamnd:
+hadoop fs -ls /public/retail_db/orders
