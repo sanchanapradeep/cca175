@@ -73,6 +73,13 @@ hadoop fs -ls /public/retail_db/orders
 orders.takeSample(true,100)
 
 collect() -> collect all values
+
 count() -> get count
-take() -> get few rec
+
+take() -> get first n no of rec
+
 takeSample(withreplacement, num of recs) -> get random data
+
+takeOrdered(n, ordering) -> get first n  no of recs in their order or a custom order
+
+saveAsText(path) -> save as a HDFS file
