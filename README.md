@@ -71,3 +71,8 @@ hadoop fs -ls /public/retail_db/orders
   val sc= new sparkcontext(conf)
   # take random sample
 orders.takeSample(true,100)
+
+collect() -> collect all values
+count() -> get count
+take() -> get few rec
+takeSample(withreplacement, num of recs) -> get random data
