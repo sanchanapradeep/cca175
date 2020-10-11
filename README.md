@@ -90,3 +90,21 @@ saveAsSequenceFile(path) -> save as HDFS sequence file
 saveAsObjectFile(path)  -> write in java serialization, which can be loaded using SparkContext.objectFile()
 
 foreach() -> to execute across the rdd or rdd sample
+
+# Read data from different file formats 
+1. orc
+2. json
+3. paquet
+4. avro
+
+sqlcontext have these apis to read these file formats.
+ ```command:``` sqlcontext.load. (PRESS tab u can see all the possibilities)
+sqlcontext.read.  (PRESS tab u can see all the possibilities)
+eg: to read json data 
+
+val orderDF = sqlContext.read.json("/public/retail_db+json/orders")
+```preview the data:```ordersDF.show() 
+![img](DF.show.png)
+# RDD -> Distributed dataset
+# DF -> dataframe is nothing but a structure on top of RDD
+
