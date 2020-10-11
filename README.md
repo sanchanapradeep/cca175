@@ -104,7 +104,41 @@ eg: to read json data
 
 val orderDF = sqlContext.read.json("/public/retail_db+json/orders")
 ```preview the data:```ordersDF.show() 
+```print schema:```ordersDF.printSchema() 
+```select the data:```ordersDF.select("order_id","order_date") 
+or 
+val orderDF = sqlContext.load("/public/retail_db+json/orders","json")
+
 ![img](DF.show.png)
 # RDD -> Distributed dataset
 # DF -> dataframe is nothing but a structure on top of RDD
+
+
+# Transfermations
+Filtering (Horizontal and vertical)
+String manipulation
+row level transfermations
+join
+Aggregation
+sort
+Ranking
+set operations
+
+//String Manipulation
+val str = orders.first
+val orderId = a(0).toInt
+check for string
+a(1).contains("2013") ->returns true/false
+orderDate.subString(0,10) -> substring( start index and end index) if u don't specify end index it wil print till end)
+orderDate.replace('-','/') -> orderDate.replace(input String, output String)
+orderDate.indexof("String", nth occourence) -> nth occourence of a string eg: orderDate,indexof(2)
+orderDate.length
+orderDate.concat
+
+# row level transftermations
+
+```Split:```
+str.split(",")
+
+
 
