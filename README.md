@@ -140,5 +140,7 @@ orderDate.concat
 ```Split:```
 str.split(",")
 
-
-
+# MAP and  Flatmap
+map returns distrributed DS by just operate on single elemnet
+flatmap returns distributed DS but each input item returns 0 or more elements.
+df.take(10).foreach(println)
